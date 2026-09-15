@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodeAlpha Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo-icon-wrap">
+        <i class="fa-solid fa-shapes logo-icon"></i>
+      </div>
+      <div class="logo-text">
+        <span class="brand">CODEALPHA</span>
+        <span class="subtext">GALLERY</span>
+      </div>
+    </div>
+
+    <!-- Category Filter Buttons -->
+    <nav class="filter-container">
+      <button class="filter-btn active" data-filter="all">[ALL]</button>
+      <button class="filter-btn" data-filter="nature">[NATURE]</button>
+      <button class="filter-btn" data-filter="architecture">[ARCHITECTURE]</button>
+      <button class="filter-btn" data-filter="travel">[TRAVEL]</button>
+      <button class="filter-btn" data-filter="street">[STREET]</button>
+    </nav>
+  </header>
+
+  <!-- Photo Grid UI -->
+  <main class="gallery-grid" id="galleryGrid">
+    
+    <!-- Card 1 -->
+    <div class="card" data-category="nature">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Autumnal Forest">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Autumnal Forest</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card" data-category="architecture">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600" alt="Urban architecture">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Urban architecture</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card" data-category="travel">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?w=600" alt="Golden Gate Sunrise">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Golden Gate Sunrise</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card" data-category="street">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=600" alt="Paris Alleyway">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Paris Alleyway</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card" data-category="nature">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600" alt="Serene Landscape">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Serene Landscape</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card" data-category="nature">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?w=600" alt="Autumnal Forest">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Autumnal Forest</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div class="card" data-category="street">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600" alt="Paris Alleyway">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Paris Alleyway</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 8 -->
+    <div class="card" data-category="nature">
+      <div class="image-wrapper">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600" alt="Serene Landscape">
+      </div>
+      <div class="card-footer">
+        <span class="card-title">Serene Landscape</span>
+        <div class="card-actions">
+          <i class="fa-regular fa-heart like-icon"></i>
+          <i class="fa-solid fa-magnifying-glass zoom-icon"></i>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 CodeAlpha Internship Project | Image Gallery V3.0 | Modern UI</p>
+  </footer>
+
+  <!-- FULL LIGHTBOX MODAL WITH FORWARD/BACKWARD & ZOOM OPTIONS -->
+  <div class="lightbox" id="lightbox">
+    <button class="close-btn" id="closeBtn">&times;</button>
+
+    <!-- Navigation Arrows -->
+    <button class="nav-btn prev-btn" id="prevBtn" title="Previous Image">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="nav-btn next-btn" id="nextBtn" title="Next Image">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+    <!-- Image Viewport Area -->
+    <div class="viewport" id="viewport">
+      <img id="lightboxImg" src="" alt="Zoomed Image View">
+    </div>
+
+    <!-- Toolbar: Zoom Options & Title -->
+    <div class="toolbar">
+      <span class="caption" id="caption"></span>
+      <div class="zoom-controls">
+        <button id="zoomOutBtn" title="Zoom Out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+        <button id="resetZoomBtn" title="Reset Zoom">1:1</button>
+        <button id="zoomInBtn" title="Zoom In"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
